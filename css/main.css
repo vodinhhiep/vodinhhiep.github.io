@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+.bg-trans{
+	background-color: transparent;
+}
+
+header .logo{
+	font-size: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF !important;
+    font-weight: 400;
+    letter-spacing: 5px;
+    padding: 7px;
+    border: 1px solid #000;
+    display: block;
+    text-align: center;
+    background: #000;
+}
