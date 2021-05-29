@@ -20,6 +20,10 @@
 	background-color: transparent;
 }
 
+.navbar-nav{
+	z-index: 10;
+}
+
 header .logo{
 	font-size: 20px;
     text-transform: uppercase;
@@ -34,14 +38,8 @@ header .logo{
 	line-height: 0.9;
 }
 
-.bold{
-	position: absolute;
+#about .bold{
     top: 50px;
-    left: 0;
-    right: 0;
-    font-size: 250px;
-    color: #f0f0f0;
-    font-family: PD800;
 }
 
 .info{
@@ -53,6 +51,7 @@ header .logo{
 
 .pic{
 	width: 100%;
+	z-index: 3;
 }
 
 #about{
@@ -61,13 +60,13 @@ header .logo{
 
 #about .desc {
     padding-left: 6em;
-    position: relative;
 	padding-top: 20px;
+	position: absolute;
 }
 
 #about .rotate {
     position: absolute;
-    top: 80px;
+    top: 100px;
     left: -40px;
 }
 
@@ -94,6 +93,9 @@ p{
     margin-bottom: 1.5em;
     font-weight: 400;
 	color: rgba(123,123,123,1.00);
+	line-height: 1.8;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 #about a{
@@ -125,5 +127,74 @@ p{
 	padding: 5px 20px;
 }
 
+.bold{
+	position: absolute;
+    font-size: 250px;
+    color: #f0f0f0;
+    font-family: PD800;
+	top: 0;
+	left: 0;
+	right: 0;
+}
 
+.intro-heading span{
+	display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    color: #bfbfbf;
+    font-weight: 600;
+}
 
+section{
+	padding: 100px 0px;
+}
+
+.intro-heading h2{
+	font-size: 34px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+    color: #000;
+	font-family: PD400;
+}
+
+#services .rotate {
+    position: absolute;
+    top: 100px;
+    left: -150px;
+}
+
+#services .bold{
+	top: 0;
+	left: 0;
+}
+
+.service{
+	margin-bottom: 4em;
+}
+
+.service h3{
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.service ul li{
+    margin-bottom: 10px;
+	color: gray;
+	line-height: 1.8;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#services{
+	position: relative;
+	padding: 100px 0px;
+}
+
+.services-content{
+	padding-top: 100px;
+}
