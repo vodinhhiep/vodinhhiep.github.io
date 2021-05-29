@@ -2,8 +2,13 @@
 /* CSS Document */
 
 @font-face{
-	font-family: HB;
-	src: url(../font/GalileoFLF.ttf);
+	font-family: PD800;
+	src: url("../font/PlayfairDisplay-Bold.ttf");
+}
+
+@font-face{
+	font-family: PD400;
+	src: url("../font/PlayfairDisplay-Regular.ttf");
 }
 
 *{
@@ -36,14 +41,12 @@ header .logo{
     right: 0;
     font-size: 250px;
     color: #f0f0f0;
-    font-weight: 700;
-	font-family: "karla";
+    font-family: PD800;
 }
 
 .info{
 	font-size: 36pt;
-	font-weight: 100;
-	font-family: "playfair-display";
+	font-family: PD400;
 	color:  #373737;
 	margin-top: 50px;
 }
