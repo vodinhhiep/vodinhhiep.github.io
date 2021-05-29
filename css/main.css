@@ -1,6 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
 
+@font-face{
+	font-family: HB;
+	src: url(../font/GalileoFLF.ttf);
+}
+
 *{
 	margin: 0 auto;
 	padding: 0 auto;
@@ -16,9 +21,106 @@ header .logo{
     color: #FFFFFF !important;
     font-weight: 400;
     letter-spacing: 5px;
-    padding: 7px;
+    padding: 7px 7px 7px 9px;
     border: 1px solid #000;
     display: block;
     text-align: center;
     background: #000;
+	line-height: 0.9;
 }
+
+.bold{
+	position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    font-size: 250px;
+    color: #f0f0f0;
+    font-weight: 700;
+	font-family: "karla";
+}
+
+.info{
+	font-size: 36pt;
+	font-weight: 100;
+	font-family: "playfair-display";
+	color:  #373737;
+	margin-top: 50px;
+}
+
+.pic{
+	width: 100%;
+}
+
+#about{
+	padding: 150px 0px;
+}
+
+#about .desc {
+    padding-left: 6em;
+    position: relative;
+	padding-top: 20px;
+}
+
+#about .rotate {
+    position: absolute;
+    top: 80px;
+    left: -40px;
+}
+
+.heading{
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1em;
+	transform: rotate(90deg);
+	color: rgba(0,0,0,0.8);
+	
+}
+
+.heading:after {
+    position: absolute;
+    top: 8px;
+    right: -40px;
+    content: '';
+    background: #000;
+    width: 40px;
+    height: 1px;
+}
+
+p{
+    margin-bottom: 1.5em;
+    font-weight: 400;
+	color: rgba(123,123,123,1.00);
+}
+
+#about a{
+    font-weight: 400;
+	color: #FF7ECE;
+}
+
+#about a i {
+	border: #ff7ece 1px solid;
+	width: 27px;
+	height: 27px;
+	border-radius: 25px;
+	text-align: center;
+	margin-top: 7px;
+	padding-top: 4px;
+	margin-right: 10px;
+}
+
+#about a i:hover {
+	background-color: #ff7ece;
+	color: white;
+}
+
+#about button{
+	border: #ff7ece 1px solid;
+	background-color: white;
+	color: #ff7ece;
+	border-radius: 4px;
+	padding: 5px 20px;
+}
+
+
+
