@@ -82,6 +82,7 @@ header .logo{
     letter-spacing: 1em;
 	transform: rotate(90deg);
 	color: rgba(0,0,0,0.8);
+	font-weight: 100;
 	
 }
 
@@ -294,4 +295,161 @@ section{
 
 #blog{
 	position: relative;
+}
+
+#blog .intro-heading{
+	padding-top: 95px;
+}
+
+#blog .rotate{
+	position: absolute;
+	top: 100px;
+	left: -150px;
+}
+
+.blog-tag{
+	margin-bottom: 50px;
+}
+
+.blog-img{
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+#blog .desc{
+	position: relative;
+}
+
+.blog-tag .desc .meta {
+    position: absolute;
+    top: -70px;
+    left: 20px;
+    background: #FFE9E3;
+    color: #000;
+    padding: 20px 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+#blog .desc h2 {
+    font-size: 24px;
+	line-height: 1.5;
+    margin-bottom: 1.5em;
+    color: #000;
+	font-family: PD400;
+}
+
+#blog .desc h2 a{
+	text-decoration: none;
+	color: black;
+}
+
+#testimonies{
+	position: relative;
+}
+
+#testimonies .intro-heading{
+	padding-top: 100px;
+}
+
+#testimonies .rotate{
+	position: absolute;
+	top: 70px;
+	left: -100px;
+}
+
+#testimonies .blockquote p{
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 20pt;
+	font-family: PD400;
+	color: #000000;
+}
+
+.carousel-indicators li {
+	background-color: #000 !important;
+}
+
+footer h2 {
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-bottom: 2em;
+	font-family: PD400;
+}
+
+footer a{
+	color: #FF7ECE;
+	text-decoration: none;
+}
+
+footer a i {
+	border: #ff7ece 1px solid;
+	width: 27px;
+	height: 27px;
+	border-radius: 25px;
+	text-align: center;
+	margin-top: 7px;
+	padding-top: 4px;
+	margin-right: 10px;
+}
+
+footer a i:hover {
+	background-color: #ff7ece;
+	color: white;
+}
+
+.f-entry{
+	margin-bottom: 40px;
+}
+
+footer .f-entry span{
+	color: #000;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer .f-entry h3{
+	font-family: PD400;
+	font-size: 20px;
+}
+
+footer .f-entry h3 a{
+	text-decoration: none;
+	color: #4d4d4d;
+}
+
+.form-pink{
+	width: 100%;
+    padding: 10px 0;
+	border: rgba(0,0,0,0.1) 1px solid;
+	border-radius: 30px;
+	background-color: #fff;
+	margin-bottom: 5px;
+}
+
+.btn-pink{
+	width: 100%;
+    padding: 10px 0;
+	color: #fff;
+	background-color: #ff7ece;
+	border-radius: 30px;
+	border: none;
+	text-transform: uppercase;
+    letter-spacing: 2px;
+	font-size: 11px;
+}
+
+footer .lasttxt p{
+	text-transform: uppercase;
+	color: #ABABAB;
+	letter-spacing: 2px;
+}
+
+footer .lasttxt{
+	margin-top: 50px;
 }
