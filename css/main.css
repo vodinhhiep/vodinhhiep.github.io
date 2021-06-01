@@ -489,7 +489,7 @@ footer .lasttxt{
 
 @media (max-width: 414px){
 	.bold{
-		font-size: 100px;
+		font-size: 90px;
 	}
 	
 	.hidden-content{
@@ -511,4 +511,15 @@ footer .lasttxt{
 	footer .lasttxt{
 	padding: 10px 0;
 }
+}
+
+
+@media (min-width: 415px) and (max-width: 767px){
+	.bold{
+		font-size: 120px;
+	}
+	
+	.hidden-content{
+	display: none;
+	}
 }
