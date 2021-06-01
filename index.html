@@ -11,8 +11,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="img/faicon.ico" type="image/ico" sizes="16x16">
 </head>
-
+	
 <body>
+	
+	<button onclick="topFunction()" id="myBtn" title="Go to top" style="opacity: 1; visibility: visible;">Backtotop</button>
+	
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-trans">
    			<div class="container"> <a class="navbar-brand logo" href="#">
@@ -416,5 +419,39 @@
 	<script>
 		$('.carousel').carousel()
 	</script>
+	<script>
+	
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                mybutton.style.opacity = 1;
+                mybutton.style.visibility = "visible";
+            } else {
+                mybutton.style.opacity = 0;
+                mybutton.style.visibility = "hidden";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            })
+        }
+        function downFunction() {
+            md = document.getElementById("social-md");
+
+            window.scrollTo({
+                top: md.offsetTop,
+                behavior: "smooth"
+            })
+        }
+    
+</script>
 </body>
 </html>
