@@ -10,11 +10,13 @@
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="img/faicon.ico" type="image/ico" sizes="16x16">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.css">
 </head>
 	
 <body>
 	
-	<button onclick="topFunction()" id="myBtn" title="Go to top" style="opacity: 1; visibility: visible;">Backtotop</button>
+	<button onclick="topFunction()" id="myBtn" title="Go to top" style="opacity: 0; visibility: visible;">Backtotop</button>
 	
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-trans">
@@ -25,11 +27,12 @@
       		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
       		<div class="collapse navbar-collapse" id="navbarNavDropdown">
         		<ul class="navbar-nav ml-auto mr-0">
-         			<li class="nav-item"> <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a> </li>
-         			<li class="nav-item"> <a class="nav-link" href="#services">Services</a> </li>
-          			<li class="nav-item"> <a class="nav-link" href="#works">Works</a> </li>
-					<li class="nav-item"> <a class="nav-link" href="#blog">Blogs</a> </li>
-					<li class="nav-item"> <a class="nav-link" href="#">Contact</a> </li>
+         			<li class="nav-item"> <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a> </li>
+         			<li class="nav-item"> <a class="nav-link" href="#services">Service</a> </li>
+          			<li class="nav-item"> <a class="nav-link" href="#works">Project</a> </li>
+					<li class="nav-item"> <a class="nav-link" href="#blog">Blog</a> </li>
+					<li class="nav-item"> <a class="nav-link" href="#testimonies">Testimony</a> </li>
+					<li class="nav-item"> <a class="nav-link" href="#contacts">Contact</a> </li>
        			</ul>
       		</div>
     		</div>
@@ -40,7 +43,7 @@
 			<div class="row text-center">
 				<h2 class="bold">About</h2>
 			</div>
-			<div class="row">
+			<div class="row totop">
 				<div class="col-12 col-md-5 ml-0">
 					<img class="pic" src="img/profile.jpg">
 				</div>
@@ -137,7 +140,7 @@
 					
 				</div>
 				<div class="col-md-6">
-					<img class="pic" src="img/black-set.jpg">
+					<img class="pic hidden-content" src="img/black-set.jpg">
 				</div>
 			</div>
 		</div>
@@ -250,13 +253,15 @@
 				<span>Blog</span>
 				<h2>Read My Case</h2>
 			</div>
+		
 		<div class="row">
 			<div class="col-12">
 				<div class="rotate">
 					<h2 class="heading">my blogs</h2>
 				</div>
 			</div>
-			<div class="col-12 col-md-4">
+		</div>
+		<div class="owl-carousel owl-theme">
 				<div class="blog-tag">
 					<a href="#">
 						<img class="blog-img" src="img/bruno-emmanuelle-TyvxZvRzI6U-unsplash.jpg">
@@ -264,11 +269,9 @@
 					<div class="desc">
 						<span class="meta">15, FEB 2021</span>
 						<h2><a href="blog.html">A Japanese Constellation</a></h2>
-						<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+						<p class="hidden-content">When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
 					</div>
 				</div>
-			</div>
-			<div class="col-12 col-md-4">
 				<div class="blog-tag">
 					<a href="#">
 						<img class="blog-img" src="img/solen-feyissa-Vmahhy8tfIM-unsplash.jpg">
@@ -276,11 +279,9 @@
 					<div class="desc">
 						<span class="meta">15, FEB 2021</span>
 						<h2><a href="blog.html">The Galaxy Color</a></h2>
-						<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+						<p class="hidden-content">When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
 					</div>
 				</div>
-			</div>
-			<div class="col-12 col-md-4">
 				<div class="blog-tag">
 					<a href="#">
 						<img class="blog-img" src="img/jorge-gascon-dZOYdWtko-Q-unsplash.jpg">
@@ -288,15 +289,47 @@
 					<div class="desc">
 						<span class="meta">15, FEB 2021</span>
 						<h2><a href="blog.html">A France Constellation</a></h2>
-						<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+						<p class="hidden-content">When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
 					</div>
 				</div>
-			</div>
+<!--
+				<div class="blog-tag">
+					<a href="#">
+						<img class="blog-img" src="img/bruno-emmanuelle-TyvxZvRzI6U-unsplash.jpg">
+					</a>
+					<div class="desc">
+						<span class="meta">15, FEB 2021</span>
+						<h2><a href="blog.html">A Japanese Constellation</a></h2>
+						<p class="hidden-content">When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+					</div>
+				</div>
+				<div class="blog-tag">
+					<a href="#">
+						<img class="blog-img" src="img/solen-feyissa-Vmahhy8tfIM-unsplash.jpg">
+					</a>
+					<div class="desc">
+						<span class="meta">15, FEB 2021</span>
+						<h2><a href="blog.html">The Galaxy Color</a></h2>
+						<p class="hidden-content">When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+					</div>
+				</div>
+				<div class="blog-tag">
+					<a href="#">
+						<img class="blog-img" src="img/jorge-gascon-dZOYdWtko-Q-unsplash.jpg">
+					</a>
+					<div class="desc">
+						<span class="meta">15, FEB 2021</span>
+						<h2><a href="blog.html">A France Constellation</a></h2>
+						<p class="hidden-content">When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+					</div>
+				</div>
+-->
 		</div>
 	</div>
 	</section>
 	<section id="testimonies">
 		<div class="container">
+			
 			<div class="row text-center">
 				<h2 class="bold">Testimonies</h2>
 			</div>
@@ -348,12 +381,10 @@
 			</div>
 		</div>
 	</section>
-	<footer>
+	<footer id="contacts">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-md-4">
-					<div class="row">
-						<div class="col-10 col-mx-auto">
+				<div class="col-12 col-md-4 item">
 							<h2>Let's Talk</h2>
 							<p>A small river named Duden flows by their place and supplies.</p>
 							<p><a href="#">hipbls25@gmail.com</a></p>
@@ -363,10 +394,8 @@
 								<a href="#"> <i class="fa fa-linkedin"></i></a>
 								<a href="#"> <i class="fa fa-behance"></i></a>
 							</p>
-						</div>
-					</div>
 				</div>
-				<div class="col-12 col-md-4">
+				<div class="col-12 col-md-4 item hidden-content">
 					<h2>Lastest Blog</h2>
 					<div class="f-entry">
 						<span>February 15, 2021</span>
@@ -381,7 +410,7 @@
 						<h3><a href="#">A Japanese Constellation</a></h3>
 					</div>
 				</div>
-				<div class="col-12 col-md-4">
+				<div class="col-12 col-md-4 item">
 					
 					<h2>Newsletter</h2>
 					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia</p>
@@ -428,7 +457,7 @@
         window.onscroll = function () { scrollFunction() };
 
         function scrollFunction() {
-            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 200) {
                 mybutton.style.opacity = 1;
                 mybutton.style.visibility = "visible";
             } else {
@@ -453,5 +482,47 @@
         }
     
 </script>
+	<script>$(document).ready(function(){
+  		$('.owl-carousel').owlCarousel();
+		});</script>
+		
+	<script src="js/owl.carousel.min.js"></script>
+	<script>var owl = $('.owl-carousel');
+		owl.owlCarousel({
+    	items:3,
+    	loop:true,
+		margin:10,
+    	autoplay:true,
+    	autoplayTimeout:3000,
+    	autoplayHoverPause:true,
+		responsiveClass:true});
+		$('.play').on('click',function(){
+    	owl.trigger('play.owl.autoplay',[1000])
+		})
+		$('.stop').on('click',function(){
+    	owl.trigger('stop.owl.autoplay')
+		})
+		$('.owl-carousel').owlCarousel({
+    	responsiveClass:true,
+			responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        414:{
+            items:1,
+            nav:false
+        },
+        768:{
+            items:3,
+            nav:true,
+            loop:false
+        }
+    }
+})
+		
+	
+		</script>
+	
 </body>
 </html>
