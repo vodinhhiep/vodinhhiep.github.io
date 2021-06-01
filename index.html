@@ -495,16 +495,8 @@
     	autoplay:true,
     	autoplayTimeout:3000,
     	autoplayHoverPause:true,
-		responsiveClass:true});
-		$('.play').on('click',function(){
-    	owl.trigger('play.owl.autoplay',[1000])
-		})
-		$('.stop').on('click',function(){
-    	owl.trigger('stop.owl.autoplay')
-		})
-		$('.owl-carousel').owlCarousel({
-    	responsiveClass:true,
-			responsive:{
+		responsiveClass:true,
+    	responsive:{
         0:{
             items:1,
             nav:true
@@ -519,10 +511,19 @@
             loop:false
         }
     }
-})
 		
-	
-		</script>
+		
+		});
+		$('.play').on('click',function(){
+    	owl.trigger('play.owl.autoplay',[1000])
+		})
+		$('.stop').on('click',function(){
+    	owl.trigger('stop.owl.autoplay')
+		})
+		
+	</script>
+		
+
 	
 </body>
 </html>
