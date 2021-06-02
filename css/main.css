@@ -60,6 +60,10 @@ header .navbar{
 	z-index: 1;
 }
 
+header a.nav-link {
+    padding-left: 25px !important;
+}
+
 
 header .logo{
 	font-size: 20px;
@@ -279,7 +283,16 @@ section{
     position: relative;
 }
 
-#works .work-img .display-t{
+#works .work-entry {
+    display: block;
+    margin-bottom: 5em;
+    width: 100%;
+    float: left;
+	overflow: hidden;
+	height: 700px;
+}
+
+#works .work-entry .work-img .display-t{
 	display: table-cell;
     vertical-align: middle;
     height: 700px;
@@ -287,29 +300,61 @@ section{
     z-index: 0;
 }
 
-#works .work-img .display-t .work-name{
+.work-entry .work-img:hover .display-t:after {
+    opacity: 1;
+}
+
+.work-entry .work-img .display-t:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+#works .work-entry .work-img .display-t .work-name{
 	display: inline-block;
     padding: 4em 3em;
     background: #fff;
     z-index: 1;
 	font-family: PD400;
 	color: #000000;
+	box-shadow: 0px 2px 49px -4px rgb(0 0 0 / 21%);
+	transition: 0.3s;
+}
+
+#works .work-entry .work-img .display-t .work-name h2{
+	transition: 0.3s;
+}
+
+#works .work-entry a{
+	transition: 0.5s;
+}
+
+#works .work-entry a:hover{
+	transform: scale(1.1);
+	transition: 0.5;
 }
 
 .img1{
-	background-image: url("../img/pursuing-best.jpg")
+	background-image: url("../img/pursuing-best.png");
 }
 
 .img2{
-	background-image: url("../img/coordinates.jpg");
+	background-image: url("../img/coordinate.png");
 }
 
 .img3{
-	background-image: url("../img/Cristall.jpg");
+	background-image: url("../img/cristall.png");
 }
 
 .img4{
-	background-image: url("../img/Black.jpg");
+	background-image: url("../img/black.png");
 }
 
 #works .desc{
