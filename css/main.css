@@ -39,10 +39,12 @@ html {
 	color: rgba(255,255,255,1.0);
 	font-weight: 100;
 	opacity: 0;
+	transition: 0.5s;
 }
 
 #myBtn:hover {
 	background-color:  rgba(0,0,0,1.00);
+	transition: 0.5s;
 }
 
 .bg-trans{
@@ -154,11 +156,13 @@ p{
 	margin-top: 7px;
 	padding-top: 4px;
 	margin-right: 10px;
+	transition: 0.5s;
 }
 
 #about a i:hover {
 	background-color: #ff7ece;
 	color: white;
+	transition: 0.5s;
 }
 
 #about button{
@@ -167,6 +171,13 @@ p{
 	color: #ff7ece;
 	border-radius: 4px;
 	padding: 5px 20px;
+	transition: 0.5s;
+}
+
+#about button:hover{
+	background-color: #ff7ece;
+	color: white;
+	transition: 0.5s;
 }
 
 .bold{
@@ -205,6 +216,7 @@ section{
 	font-family: PD400;
 }
 
+
 #services .rotate {
     position: absolute;
     top: 100px;
@@ -214,6 +226,10 @@ section{
 #services .bold{
 	top: 0;
 	left: 0;
+}
+
+.hidden-content2{
+	padding-top: 120px;
 }
 
 .service{
@@ -246,7 +262,7 @@ section{
 }
 
 #works .intro-heading{
-	padding-top: 70px;
+	padding-top: 95px;
 	
 }
 
@@ -373,7 +389,7 @@ section{
 }
 
 #testimonies .intro-heading{
-	padding-top: 100px;
+	padding-top: 95px;
 }
 
 #testimonies .rotate{
@@ -460,6 +476,10 @@ footer .f-entry h3 a{
 	margin-bottom: 5px;
 }
 
+.form-pink:focus{
+	outline: none !important;
+}
+
 .btn-pink{
 	width: 100%;
     padding: 10px 0;
@@ -470,6 +490,17 @@ footer .f-entry h3 a{
 	text-transform: uppercase;
     letter-spacing: 2px;
 	font-size: 11px;
+	transition: 0.5s;
+}
+
+.btn-pink:hover{
+	color: #ff7ece;
+	background-color: #000000;
+	transition: 0.5s;
+}
+
+.btn-pink:focus{
+	outline: none !important;
 }
 
 .item{
@@ -480,7 +511,7 @@ footer .lasttxt p{
 	text-transform: uppercase;
 	color: #ABABAB;
 	letter-spacing: 2px;
-	font-size: 11pt;
+	font-size: 10pt !important;
 }
 
 footer .lasttxt{
@@ -494,6 +525,10 @@ footer .lasttxt{
 	
 	.hidden-content{
 	display: none;
+	}
+	
+	.hidden-content2{
+		display: none;
 	}
 	
 	section{
@@ -521,5 +556,19 @@ footer .lasttxt{
 	
 	.hidden-content{
 	display: none;
+	}
+	
+	.hidden-content2{
+		display: none;
+	}
+}
+
+@media (min-width:768px) and (max-width: 1023px){
+	.hidden-content2{
+		display: none;
+	}
+	
+	#about .pic{
+		padding-top: 120px;
 	}
 }
