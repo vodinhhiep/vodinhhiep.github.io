@@ -458,6 +458,7 @@ section{
 
 footer{
 	overflow: hidden;
+	padding-top: 100px;
 }
 
 footer h2 {
