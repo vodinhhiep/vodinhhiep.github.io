@@ -553,6 +553,45 @@ footer .f-entry h3 a{
 	padding-bottom: 50px;
 }
 
+#contacts .form-inp {
+    width: 100%;
+    height: 45px;
+    border: 0;
+    color: #000;
+    border-bottom: solid 1px #dfdfdf;
+    font-size: 13px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+
+#contacts textarea {
+    width: 100%;
+    border: 0;
+    border-bottom: solid 1px #dfdfdf;
+    font-size: 13px;
+    padding: 20px 0 0 10px;
+    height: 165px;
+	font-family: RBT-Light;
+}
+
+#contacts .btn-position{
+	justify-content: center;
+	display: flex;
+}
+
+#contacts .intro-heading{
+	padding-top: 95px;
+	
+}
+
+#contacts .rotate {
+    position: absolute;
+    top: 100px;
+    left: -40px;
+}
+
+
 footer .lasttxt p{
 	text-transform: uppercase;
 	color: #ABABAB;
